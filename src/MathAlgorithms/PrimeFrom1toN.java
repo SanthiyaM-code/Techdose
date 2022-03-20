@@ -12,7 +12,7 @@ public class PrimeFrom1toN {
         {
             for(int j=i*i; j<=n;j=j+i)
             {
-                if(isConsonant[j]==false)
+                if(!isConsonant[j])
                 {
                     isConsonant[j]=true;
                 }
@@ -20,7 +20,7 @@ public class PrimeFrom1toN {
         }
         for(int i=2;i<=n;i++)
         {
-            if(isConsonant[i]==false)
+            if(!isConsonant[i])
                 System.out.print(i+" ");
         }
 
